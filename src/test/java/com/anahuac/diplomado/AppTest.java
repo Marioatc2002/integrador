@@ -1,13 +1,16 @@
 package com.anahuac.diplomado;
 
-import static org.junit.Assert.*;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -24,9 +27,9 @@ import com.anahuac.diplomado.integrador.Veterinario;
  * ============================================================================
  * SUITE DE PRUEBAS UNITARIAS (JUNIT)
  * ============================================================================
- * Puedes ejecutar estas pruebas en cualquier momento desde tu terminal con:
- *     mvn test
- * 
+ * Puedes ejecutar estas pruebas en cualquier momento desde tu terminal con: mvn
+ * test
+ *
  * A medida que implementes cada clase y sus TODOs, las pruebas correspondientes
  * comenzarán a pasar de ROJO a VERDE.
  */

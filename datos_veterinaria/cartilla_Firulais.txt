@@ -1,2 +1,2 @@
-Parvovirus,2026-10-02
-Rabia,2026-10-02
+Parvovirus,2026-10-06
+Rabia,2026-10-06

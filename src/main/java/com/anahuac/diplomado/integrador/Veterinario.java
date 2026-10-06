@@ -47,6 +47,18 @@ public class Veterinario {
      */
     public void aplicarVacuna(Mascota mascota, String vacuna) {
         // --- ESCRIBE TU CÓDIGO AQUÍ ---
+        if (mascota == null) {
+            System.out.println("⚠️  No se puede aplicar la vacuna. La mascota es nula.");
+            return;
+        }
+        if (mascota.vacunasRecomendadas().contains(vacuna)) {
+            mascota.vacunar(vacuna, LocalDate.now());
+            System.out.println("🩺 Dr(a). " + nombre + " aplicó " + vacuna + " a " + mascota.getNombre());
+        }
+        else {
+            System.out.println("⚠️  " + vacuna + " no es una vacuna recomendada para " + mascota.getNombre());
+            return;
+        }
 
     }
 
